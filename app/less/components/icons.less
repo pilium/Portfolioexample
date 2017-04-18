@@ -1,1 +1,80 @@
-//adding icon fonts, icon sprite sheets
+.sprite-frame,
+.sprite-instant,
+.sprite-serious,
+.sprite-coffee
+{
+    display: inline-block;
+    overflow: hidden;
+
+    text-align: left;
+    text-indent: -9999px;
+
+    background: url('../img/spritesheet.png') no-repeat;
+}
+
+.sprite-frame
+{
+    width: 48px;
+    height: 48px;
+
+    background-position: -5px -0;
+}
+
+.sprite-instant
+{
+    width: 48px;
+    height: 48px;
+
+    background-position: -5px -53px;
+}
+
+.sprite-serious
+{
+    width: 47px;
+    height: 48px;
+
+    background-position: -5px -106px;
+}
+
+.sprite-coffee
+{
+    width: 34px;
+    height: 48px;
+
+    background-position: -5px -156px;
+}
+
+[class^='icon-'],
+[class*=' icon-']
+{
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icons' !important;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    text-transform: none;
+
+    speak: none;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before
+{
+    content: '\f099';
+}
+.icon-google-plus:before
+{
+    content: '\f0d5';
+}
+.icon-coffee:before
+{
+    content: '\f0f4';
+}
+.icon-dribbble:before
+{
+    content: '\f17d';
+}

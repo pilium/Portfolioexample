@@ -1758,7 +1758,8 @@ select[multiple].input-lg {
 .text-uppercase {
   text-transform: uppercase;
 }
-.ul-unstyled {
+.ul-unstyled,
+.horizontal-nav {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1771,4 +1772,196 @@ select[multiple].input-lg {
 .row.no-gutters > [class*=" col-"] {
   padding-right: 0;
   padding-left: 0;
+}
+.stn-padding,
+.stn-services,
+.stn-portfolio {
+  padding: 80px 0;
+}
+@font-face {
+  font-family: 'Segoe';
+  src: url('../fonts/SegoeUIBold/SegoeUIBold.eot');
+  src: url('../fonts/SegoeUIBold/SegoeUIBold.eot?#iefix') format('embedded-opentype'), url('../fonts/SegoeUIBold/SegoeUIBold.woff') format('woff'), url('../fonts/SegoeUIBold/SegoeUIBold.ttf') format('truetype'), url('../fonts/SegoeUIBold/SegoeUIBold.svg#Segoe') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Segoe';
+  src: url('../fonts/SegoeUILight/SegoeUILight.eot');
+  src: url('../fonts/SegoeUILight/SegoeUILight.eot?#iefix') format('embedded-opentype'), url('../fonts/SegoeUILight/SegoeUILight.woff') format('woff'), url('../fonts/SegoeUILight/SegoeUILight.ttf') format('truetype'), url('../fonts/SegoeUILight/SegoeUILight.svg#Segoe') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Segoe';
+  src: url('../fonts/SegoeUIRegular/SegoeUIRegular.eot');
+  src: url('../fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/SegoeUIRegular/SegoeUIRegular.woff') format('woff'), url('../fonts/SegoeUIRegular/SegoeUIRegular.ttf') format('truetype'), url('../fonts/SegoeUIRegular/SegoeUIRegular.svg#Segoe') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Segoe';
+  src: url('../fonts/SegoeUISemiBold/SegoeUISemoBold.eot');
+  src: url('../fonts/SegoeUISemiBold/SegoeUISemoBold.eot?#iefix') format('embedded-opentype'), url('../fonts/SegoeUISemiBold/SegoeUISemoBold.woff') format('woff'), url('../fonts/SegoeUISemiBold/SegoeUISemoBold.ttf') format('truetype'), url('../fonts/SegoeUISemiBold/SegoeUISemoBold.svg#Segoe') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'icons';
+  src: url('../fonts/icons/icons.eot');
+  src: url('../fonts/icons/icons.eot?#iefix') format('embedded-opentype'), url('../fonts/icons/icons.woff') format('woff'), url('../fonts/icons/icons.ttf') format('truetype'), url('../fonts/icons/icons.svg#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.sprite-frame,
+.sprite-instant,
+.sprite-serious,
+.sprite-coffee {
+  display: inline-block;
+  overflow: hidden;
+  text-align: left;
+  text-indent: -9999px;
+  background: url('../img/spritesheet.png') no-repeat;
+}
+.sprite-frame {
+  width: 48px;
+  height: 48px;
+  background-position: -5px 0;
+}
+.sprite-instant {
+  width: 48px;
+  height: 48px;
+  background-position: -5px -53px;
+}
+.sprite-serious {
+  width: 47px;
+  height: 48px;
+  background-position: -5px -106px;
+}
+.sprite-coffee {
+  width: 34px;
+  height: 48px;
+  background-position: -5px -156px;
+}
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-transform: none;
+  speak: none;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-twitter:before {
+  content: '\f099';
+}
+.icon-google-plus:before {
+  content: '\f0d5';
+}
+.icon-coffee:before {
+  content: '\f0f4';
+}
+.icon-dribbble:before {
+  content: '\f17d';
+}
+.horizontal-nav li {
+  display: inline-block;
+  margin-left: 15px;
+}
+.horizontal-nav li a {
+  transition: all 0.3s ease-in-out;
+  display: block;
+  border: 2px solid transparent;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 17px;
+  line-height: 1;
+}
+.horizontal-nav li a.active {
+  border-color: #4bcaff;
+  color: #4bcaff;
+}
+.horizontal-nav li a:hover {
+  color: #4bcaff;
+}
+.horizontal-nav.black-font a {
+  color: #515f67;
+}
+body {
+  font-family: 'Segoe', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 1.71428571;
+}
+.site-header {
+  background-image: url('../img/hero-img.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  -ms-behavior: url(/ie8-support/backgroundsize.min.htc);
+}
+.site-header img {
+  margin-top: 7.5px;
+}
+.site-nav {
+  background-color: #48525a;
+  background-color: rgba(72, 82, 90, 0.85);
+  padding: 60px 0;
+}
+.site-nav .horizontal-nav {
+  float: right;
+}
+.hero-heading {
+  margin: 250px 0;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 300;
+  font-size: 3rem;
+  text-align: center;
+}
+.hero-heading span {
+  background-color: rgba(72, 82, 90, 0.85);
+  padding: 0 20px;
+}
+.stn-heading {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 2.143em;
+  margin-bottom: 40px;
+  margin-top: 0;
+  line-height: 1;
+}
+.stn-heading::after {
+  content: '';
+  width: 45px;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 11px;
+}
+.stn-heading.black-line::after {
+  background-color: #515f67;
+}
+.stn-services {
+  background-color: #4bcaff;
+  color: #fff;
+  font-weight: 500;
+}
+.stn-services h3 {
+  text-transform: uppercase;
+  font-size: 1.714em;
+  line-height: 1;
+  margin-top: 21px;
+  margin-bottom: 20px;
+}
+@media (max-width: 1200px) {
+  .stn-services [class^="col-"] {
+    margin-bottom: 50px;
+  }
 }

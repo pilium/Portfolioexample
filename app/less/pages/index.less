@@ -1,0 +1,78 @@
+.site-header {
+  .bg-img('hero-img.png');
+  -ms-behavior: url(/ie8-support/backgroundsize.min.htc);
+
+
+  img {
+    margin-top: (38px - 23px )/2;
+  }
+}
+.site-nav {
+  background-color: @overlay;
+  background-color: fade(@overlay, 85%);
+  padding: 60px 0;
+
+  .horizontal-nav {
+    float: right;
+  }
+
+}
+
+.hero-heading {
+  margin: 250px 0;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 300;
+  font-size: 3rem;
+  text-align: center;
+
+  span {
+    background-color: fade(@overlay, 85%);
+    padding: 0 20px;
+  }
+}
+
+// Section services
+.stn-heading {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 2.143em;
+  margin-bottom: 40px;
+  margin-top: 0;
+  line-height: 1;
+  &::after {
+    content: '';
+    width: 45px;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 11px;
+
+  }
+  &.black-line::after {
+    background-color: @font;
+  }
+}
+.stn-services {
+  &:extend(.stn-padding);
+  background-color: @accent;
+  color: #fff;
+  font-weight: 500;
+
+  h3 {
+    text-transform: uppercase;
+    font-size: 1.714em;
+    line-height: 1;
+    margin-top: 21px;
+    margin-bottom: 20px;
+  }
+  [class^="col-"] {
+    @media (max-width: 1200px) {
+      margin-bottom: 50px;
+    }
+  }
+} //.stn-service
+
+// Portfolio
+.stn-portfolio {
+  &:extend(.stn-padding);
+}
