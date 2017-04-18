@@ -1,0 +1,17 @@
+{
+  "name": "portpholioexampl",
+  "version": "0.0.1",
+  "description": "one option of portpholio site",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp-clean-css": "^3.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Igor Myasnikov",
+  "git repository": "",
+  "license": "ISC"
+}
