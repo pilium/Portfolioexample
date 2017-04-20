@@ -36,7 +36,7 @@
               $menu = $('.trigger-victim');
 
           $trigger.click(function() {
-            $(this).next($menu).slideToggle();
+            $(this).next($menu).slideToggle(700);
           });
 
           $(window).resize(function() {
@@ -47,6 +47,6 @@
         }
         blueasyMenu();
 
-      }); //end ready
+      }); //end blueasyMenu
 
     }(jQuery));
