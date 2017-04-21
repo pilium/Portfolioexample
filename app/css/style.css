@@ -1958,6 +1958,17 @@ select[multiple].input-lg {
     padding-right: 20px;
   }
 }
+@media screen and (max-width: 741px) {
+  .tab-wrapper .tab-menu {
+    position: relative;
+    top: 90px;
+    left: 0;
+  }
+  .tab-wrapper .tab-menu li a {
+    border: none;
+    padding: 1px;
+  }
+}
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;
